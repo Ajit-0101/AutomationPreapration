@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parameterization Test Suite]">
+  <test thread-count="5" name="Test Parametization(failed)">
+    <parameter name="password" value="Test@123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="URL" value="https://demo.vtiger.com/vtigercrm/index.php"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="advancetestng.Parameterization">
+        <methods>
+          <include name="testLoginOfVtiger"/>
+        </methods>
+      </class> <!-- advancetestng.Parameterization -->
+    </classes>
+  </test> <!-- Test Parametization(failed) -->
+</suite> <!-- Failed suite [Parameterization Test Suite] -->

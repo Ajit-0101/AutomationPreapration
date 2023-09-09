@@ -1,13 +1,12 @@
-package utilitiesExcel;
+package utilities;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtility {
 
@@ -18,7 +17,7 @@ public class ExcelUtility {
 	public static Workbook initializeWorkbook(String filePath) {
 		try {
 			fileInputStream = new FileInputStream(filePath);
-			return new XSSFWorkbook(fileInputStream);
+			return new HSSFWorkbook(fileInputStream);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -52,24 +51,6 @@ public class ExcelUtility {
 		default:
 			throw new RuntimeException("There is no support for this type of cell");
 		}
-	}
-	public static void updateExcelContent(String filePath, String sheetName, int rowNum, int cellNum, String input) {
-		workbook = initializeWorkbook(filePath);
-		Cell cell = workbook.getSheet(sheetName).getRow(rowNum).createCell(cellNum);
-		cell.setCellValue(input);
-		// to store the update data find the location to save the file
-		FileOutputStream fos;
-		try {
-			fos = new FileOutputStream(filePath);
-			// write the content in to the required file
-			workbook.write(fos);
-			// close the connection
-			fos.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}	
 	}
 
 }

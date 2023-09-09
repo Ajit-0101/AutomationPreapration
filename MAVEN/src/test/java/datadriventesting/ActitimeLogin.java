@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Utilities.SeleniumUtility;
-import utilitiesExcel.ExcelUtility;
+import Utilities.ExcelUtility;
 public class ActitimeLogin extends SeleniumUtility{	
 	String appUrl;
 	String userName;

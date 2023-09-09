@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+  <groups>
+      <run>
+        <include name="Smoke Test"/>
+        <exclude name="Regression"/>
+        <exclude name="Sanity Test"/>  
+        </run>
+  </groups>>
+    <classes>
+      <class name="advancetestng.GroupExample"/>
+      <class name="advancetestng.GroupExamples2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+   

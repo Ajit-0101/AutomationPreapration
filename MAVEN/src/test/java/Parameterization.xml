@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Parameterization Test Suite">
+  <test name="Test Parametization">
+  <parameter name="password" value="Test@123"/>
+	<parameter name="browser" value="chrome"/>
+	<parameter name="username" value="admin"/>
+	<parameter name="URL" value="https://demo.vtiger.com/vtigercrm/index.php"/>
+	
+    <classes>
+      <class name="advancetestng.Parameterization"/>
+       <methods>
+				<include name="testCaseOne"/>
+				<include name="testLoginOfVtiger"/>
+			</methods> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

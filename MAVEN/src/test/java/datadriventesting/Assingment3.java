@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Utilities.SeleniumUtility;
-import utilitiesExcel.ExcelUtility;
+import Utilities.ExcelUtility;
 public class Assingment3 extends SeleniumUtility{	
 	String appUrl;
 	String userName;
