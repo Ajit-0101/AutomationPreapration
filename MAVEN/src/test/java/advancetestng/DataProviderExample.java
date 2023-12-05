@@ -11,9 +11,9 @@ public class DataProviderExample extends SeleniumUtility {
 
 
 	/**
-	 * This test method declares that its data should be supplied by the Data
-	 * Provider "getdata" is the function name which is passing the data Number of
-	 * columns should match the number of input parameters
+	 * This test method declares that its data should be supplied by the Data Provider 
+	 * "getdata" is the function name which is passing the data 
+	 * Number of columns should match the number of input parameters
 	 */
 	@Test(dataProvider = "getData")
 	public void setData(String username, String password) {

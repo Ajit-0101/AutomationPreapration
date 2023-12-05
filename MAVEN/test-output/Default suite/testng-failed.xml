@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="OrangeHrm_TestScripts.TestOrangeHrmPIM">
+      <class name="datadriventesting.Example1">
         <methods>
-          <include name="testPIMUpdate"/>
-          <include name="testPIMDelete"/>
-          <include name="testPIMAddition"/>
-          <include name="preCondition"/>
-          <include name="postCondition"/>
+          <include name="uploadFile"/>
         </methods>
-      </class> <!-- OrangeHrm_TestScripts.TestOrangeHrmPIM -->
+      </class> <!-- datadriventesting.Example1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

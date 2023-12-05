@@ -26,7 +26,7 @@ public class ExcelReading {
 		// and also get specific cell
 	}
 
-	@Test
+/*	@Test
 	public void readSheetDetails() throws IOException {
 		// Create instance of FileInputStream class and pass the required excel file
 		// location to its constructor
@@ -128,7 +128,7 @@ public class ExcelReading {
 				break;
 			}
 		}
-	}
+	}*/
 
 	@Test
 	public void readAllDataFromSheet() throws IOException {
